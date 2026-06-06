@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Acrylic Awards & Trophies Dubai | Pleasant Plastic UAE</title>
+    <meta name="description" content="Dubai's premier custom acrylic awards & trophies manufacturer. Laser engraving, bulk orders, fast UAE delivery. Get a free quote within 24 hours.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        :root {
+            --red: #D9000F;
+            --red-dark: #a80009;
+            --red-light: #ff1a28;
+            --gold: #c9a84c;
+            --gold-light: #e8c97a;
+            
+            /* Theme Variables */
+            --black: #ffffff;
+            --near-black: #f8f9fa;
+            --dark: #ffffff;
+            --mid: #e9ecef;
+            --gray: #6c757d;
+            --light-gray: #ced4da;
+            --off-white: #111111;
+            --white: #0a0a0a;
+            
+            --font-display: 'Cormorant Garamond', serif;
+            --font-body: 'DM Sans', sans-serif;
+        }
+        
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: var(--font-body);
+            background: var(--black);
+            color: var(--white);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            padding: 0 5%;
+            display: flex; align-items: center; justify-content: space-between;
+            height: 72px;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(217,0,15,0.15);
+        }
+        
+        .logo-wrap { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        
+        .logo-img {
+            height: 42px;
+            width: auto;
+            max-width: 180px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+        
+        .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+        .logo-name { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--white); letter-spacing: 0.02em; }
+        .logo-sub { font-size: 9px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); }
+        
+        .nav-cta {
+            background: var(--red); color: white;
+            padding: 10px 24px; border: none; cursor: pointer;
+            font-family: var(--font-body); font-size: 13px; font-weight: 600;
+            letter-spacing: 0.08em; text-transform: uppercase;
+            text-decoration: none;
+            clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+            transition: background 0.2s;
+        }
+        .nav-cta:hover { background: var(--red-dark); }
+
+        .hero {
+            min-height: 100vh;
+            display: grid; grid-template-columns: 1fr 1fr;
+            padding-top: 72px;
+            position: relative; overflow: hidden;
+        }
+        
+        .hero-bg-pattern {
+            position: absolute; inset: 0; pointer-events: none;
+            background-image:
+              repeating-linear-gradient(45deg, rgba(217,0,15,0.03) 0px, rgba(217,0,15,0.03) 1px, transparent 1px, transparent 40px),
+              repeating-linear-gradient(-45deg, rgba(217,0,15,0.03) 0px, rgba(217,0,15,0.03) 1px, transparent 1px, transparent 40px);
+        }
+        
+        .hero-accent-line {
+            position: absolute; left: 0; top: 72px; bottom: 0; width: 4px;
+            background: linear-gradient(to bottom, var(--red), transparent);
+        }
+        
+        .hero-left {
+            padding: 80px 5% 80px 7%;
+            display: flex; flex-direction: column; justify-content: center;
+            position: relative; z-index: 2;
+        }
+        
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: rgba(217,0,15,0.08); border: 1px solid rgba(217,0,15,0.2);
+            padding: 6px 14px; border-radius: 2px; margin-bottom: 28px;
+            font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase;
+            color: var(--red); width: fit-content;
+        }
+        .hero-badge::before { content: ''; width: 6px; height: 6px; background: var(--red); border-radius: 50%; }
+        
+        .hero-h1 {
+            font-family: var(--font-display);
+            font-size: clamp(42px, 5.5vw, 74px);
+            font-weight: 700; line-height: 1.05;
+            color: var(--white); margin-bottom: 8px;
+        }
+        .hero-h1 em { font-style: italic; color: var(--gold); }
+        
+        .hero-h1-sub {
+            font-family: var(--font-display);
+            font-size: clamp(28px, 3.5vw, 48px);
+            font-weight: 400; font-style: italic;
+            color: rgba(0, 0, 0, 0.6); margin-bottom: 32px;
+        }
+        
+        .hero-desc {
+            font-size: 16px; color: rgba(0, 0, 0, 0.7);
+            max-width: 460px; line-height: 1.7; margin-bottom: 40px;
+            font-weight: 400;
+        }
+        
+        .hero-ctas { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin-bottom: 52px; }
+        
+        .btn-primary {
+            background: var(--red); color: white;
+            padding: 16px 36px; border: none; cursor: pointer;
+            font-family: var(--font-body); font-size: 14px; font-weight: 600;
+            letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
+            display: inline-block;
+            clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+            transition: all 0.2s;
+            position: relative; overflow: hidden;
+        }
+        .btn-primary::after {
+            content: ''; position: absolute; inset: 0;
+            background: rgba(255,255,255,0.15);
+            transform: translateX(-100%); transition: transform 0.3s;
+        }
+        .btn-primary:hover { background: var(--red-dark); }
+        .btn-primary:hover::after { transform: translateX(0); }
+        
+        .btn-ghost {
+            color: rgba(0, 0, 0, 0.8); font-size: 14px; font-weight: 500;
+            text-decoration: none; display: flex; align-items: center; gap: 8px;
+            letter-spacing: 0.04em; transition: color 0.2s, border-color 0.2s;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 15px 28px;
+        }
+        .btn-ghost:hover { color: var(--red); border-color: rgba(217,0,15,0.4); }
+        .btn-ghost svg { width: 16px; height: 16px; }
+        
+        .hero-stats {
+            display: flex; gap: 36px; flex-wrap: wrap;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            padding-top: 28px;
+        }
+        .stat-num {
+            font-family: var(--font-display); font-size: 34px; font-weight: 700;
+            color: var(--white); line-height: 1;
+        }
+        .stat-num span { color: var(--red); }
+        .stat-label { font-size: 12px; color: rgba(0, 0, 0, 0.5); text-transform: uppercase; letter-spacing: 0.12em; margin-top: 4px; font-weight: 600; }
+
+        .hero-right {
+            position: relative; overflow: hidden;
+            display: flex; align-items: center; justify-content: center;
+            padding: 80px 4% 80px 0;
+        }
+        
+        .hero-mosaic {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            gap: 10px;
+            width: 100%; max-width: 500px;
+            position: relative; z-index: 2;
+        }
+        
+        .mosaic-card {
+            border-radius: 4px; overflow: hidden;
+            position: relative; 
+            background: #1a1a1a;
+            transition: transform 0.3s;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        .mosaic-card:hover { transform: scale(1.02); }
+        .mosaic-card.tall { grid-row: span 2; }
+        
+        .mosaic-card img {
+            width: 100%; height: 100%; object-fit: cover;
+            display: block; min-height: 180px;
+            filter: brightness(0.88) saturate(1.1);
+            transition: filter 0.4s;
+        }
+        .mosaic-card:hover img { filter: brightness(0.95) saturate(1.2); }
+        
+        .mosaic-card .card-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(to top, rgba(10,10,10,0.7) 0%, transparent 50%);
+        }
+        
+        .mosaic-card .card-label {
+            position: absolute; bottom: 10px; left: 12px; right: 12px;
+            font-size: 11px; font-weight: 600; letter-spacing: 0.12em;
+            text-transform: uppercase; color: rgba(255,255,255,0.95);
+        }
+        
+        .mosaic-badge-floating {
+            position: absolute; top: -16px; right: -16px; z-index: 10;
+            width: 100px; height: 100px;
+            background: var(--red); color: white;
+            border-radius: 50%;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            box-shadow: 0 8px 25px rgba(217,0,15,0.3);
+            animation: pulse-badge 3s ease-in-out infinite;
+        }
+        .mosaic-badge-floating .badge-num { font-family: var(--font-display); font-size: 26px; font-weight: 700; line-height: 1; }
+        .mosaic-badge-floating .badge-txt { font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; text-align: center; line-height: 1.3; opacity: 0.9; }
+        
+        @keyframes pulse-badge { 
+            0%,100%{box-shadow:0 8px 25px rgba(217,0,15,0.3)} 
+            50%{box-shadow:0 8px 35px rgba(217,0,15,0.5)} 
+        }
+
+        .trust-bar {
+            background: rgba(217,0,15,0.04);
+            border-top: 1px solid rgba(217,0,15,0.1);
+            border-bottom: 1px solid rgba(217,0,15,0.1);
+            padding: 20px 5%;
+            display: flex; align-items: center; justify-content: center;
+            gap: 48px; flex-wrap: wrap;
+        }
+        
+        .trust-item {
+            display: flex; align-items: center; gap: 10px;
+            font-size: 13px; font-weight: 600; color: rgba(0, 0, 0, 0.75);
+            white-space: nowrap;
+        }
+        .trust-item svg { width: 18px; height: 18px; fill: var(--gold); flex-shrink: 0; }
+        .trust-divider { width: 1px; height: 28px; background: rgba(0, 0, 0, 0.1); }
+        
+        section { padding: 100px 5%; }
+        
+        .section-label {
+            font-size: 11px; font-weight: 700; letter-spacing: 0.25em;
+            text-transform: uppercase; color: var(--red);
+            margin-bottom: 14px; display: flex; align-items: center; gap: 10px;
+        }
+        .section-label::before { content: ''; width: 32px; height: 1px; background: var(--red); }
+        
+        .section-h2 {
+            font-family: var(--font-display);
+            font-size: clamp(34px, 4vw, 54px);
+            font-weight: 700; line-height: 1.1; color: var(--white);
+        }
+        .section-h2 em { font-style: italic; color: var(--gold); }
+
+        .products-section { background: var(--near-black); }
+        .products-header { max-width: 640px; margin-bottom: 60px; }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .product-card {
+            background: var(--dark);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .product-card:hover { 
+             border-color: rgba(217,0,15,0.4); 
+             transform: translateY(-4px); 
+             box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        }
+        
+        .product-card-img {
+            height: 240px; overflow: hidden; position: relative;
+            background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+            display: flex; align-items: center; justify-content: center;
+        }
+        .product-card-img img { 
+            width: 100%; height: 100%; object-fit: cover; 
+            transition: transform 0.4s ease; 
+        }
+        .product-card:hover .product-card-img img { transform: scale(1.05); }
+        
+        .product-card-tag {
+            position: absolute; top: 12px; left: 12px;
+            background: var(--red); color: white;
+            font-size: 10px; font-weight: 700; letter-spacing: 0.15em;
+            text-transform: uppercase; padding: 4px 10px;
+        }
+        
+        .product-card-body { padding: 22px 22px 26px; }
+        .product-card-name {
+            font-family: var(--font-display); font-size: 22px; font-weight: 700;
+            color: var(--white); margin-bottom: 8px; line-height: 1.2;
+        }
+        .product-card-desc { font-size: 14px; color: rgba(0, 0, 0, 0.6); line-height: 1.65; margin-bottom: 18px; }
+        
+        .product-card-link {
+            font-size: 12px; font-weight: 700; letter-spacing: 0.12em;
+            text-transform: uppercase; color: var(--gold);
+            text-decoration: none; display: flex; align-items: center; gap: 6px;
+            transition: gap 0.2s;
+        }
+        .product-card:hover .product-card-link { gap: 10px; color: var(--red); }
+
+        .usp-section {
+            background: var(--black);
+            position: relative; overflow: hidden;
+        }
+        .usp-section::before {
+            content: 'EXCELLENCE';
+            position: absolute; right: -40px; top: 50%;
+            transform: translateY(-50%);
+            font-family: var(--font-display); font-size: 180px; font-weight: 700;
+            color: rgba(0, 0, 0, 0.03); pointer-events: none; white-space: nowrap;
+        }
+        
+        .usp-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 60px; align-items: center;
+        }
+        .usp-list { display: flex; flex-direction: column; gap: 0; }
+        
+        .usp-item {
+            display: flex; gap: 24px; align-items: flex-start;
+            padding: 28px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            transition: padding-left 0.3s;
+            cursor: default;
+        }
+        .usp-item:hover { padding-left: 10px; }
+        .usp-item:first-child { border-top: 1px solid rgba(0, 0, 0, 0.08); }
+        
+        .usp-number {
+            font-family: var(--font-display); font-size: 44px; font-weight: 700;
+            color: rgba(217,0,15,0.15); line-height: 1; min-width: 52px;
+            transition: color 0.3s;
+        }
+        .usp-item:hover .usp-number { color: var(--red); }
+        
+        .usp-title { font-size: 17px; font-weight: 700; color: var(--white); margin-bottom: 6px; }
+        .usp-desc { font-size: 14px; color: rgba(0, 0, 0, 0.6); line-height: 1.65; }
+        
+        .usp-visual {
+            display: flex; flex-direction: column; gap: 16px; position: relative;
+        }
+        
+        .usp-visual-main {
+            background: #1a1a1a;
+            border-radius: 4px; overflow: hidden;
+            aspect-ratio: 4/3;
+            display: flex; align-items: center; justify-content: center;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .usp-visual-main img { width: 100%; height: 100%; object-fit: cover; }
+        
+        .usp-visual-secondary {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+        }
+        .usp-mini-card {
+            background: var(--dark);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            border-radius: 4px; padding: 20px 18px;
+            text-align: center;
+        }
+        .usp-mini-num {
+            font-family: var(--font-display); font-size: 32px; font-weight: 700;
+            color: var(--gold); line-height: 1;
+        }
+        .usp-mini-label { font-size: 11px; font-weight: 600; color: rgba(0, 0, 0, 0.5); text-transform: uppercase; letter-spacing: 0.12em; margin-top: 4px; }
+
+        .how-section { background: var(--near-black); }
+        
+        .steps-grid {
+            display: grid; grid-template-columns: repeat(4, 1fr);
+            gap: 0; margin-top: 60px; position: relative;
+        }
+        .steps-grid::before {
+            content: '';
+            position: absolute; top: 36px; left: 12.5%; right: 12.5%;
+            height: 1px; background: linear-gradient(to right, transparent, var(--red), transparent);
+        }
+        
+        .step { padding: 0 24px 0 0; text-align: left; }
+        .step-circle {
+            width: 72px; height: 72px;
+            border: 2px solid var(--red);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 24px; position: relative; background: var(--black);
+            font-family: var(--font-display); font-size: 26px; font-weight: 700; color: var(--red);
+            box-shadow: 0 4px 15px rgba(217,0,15,0.1);
+        }
+        .step-circle svg { width: 28px; height: 28px; fill: none; stroke: var(--red); stroke-width: 1.5; }
+        .step-title { font-size: 16px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+        .step-desc { font-size: 14px; color: rgba(0, 0, 0, 0.6); line-height: 1.65; }
+        
+        .industries-section { background: var(--black); }
+        .industries-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 14px; margin-top: 52px;
+        }
+        .industry-pill {
+            background: var(--dark);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+            padding: 18px 22px;
+            border-radius: 2px;
+            display: flex; align-items: center; gap: 14px;
+            font-size: 14px; font-weight: 600; color: rgba(0, 0, 0, 0.7);
+            transition: all 0.25s; cursor: default;
+        }
+        .industry-pill:hover {
+            border-color: rgba(217,0,15,0.3);
+            background: rgba(217,0,15,0.03);
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(217,0,15,0.05);
+        }
+        .industry-pill svg { width: 20px; height: 20px; fill: none; stroke: var(--red); stroke-width: 1.5; flex-shrink: 0; }
+
+        .testimonials-section { background: var(--near-black); }
+        .testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 52px; }
+        .testi-card {
+            background: var(--dark);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            border-radius: 4px; padding: 30px 28px;
+            position: relative; transition: border-color 0.3s;
+        }
+        .testi-card:hover { border-color: rgba(201,168,76,0.6); }
+        .testi-quote {
+            font-family: var(--font-display); font-size: 60px; font-weight: 700;
+            color: rgba(217,0,15,0.15); line-height: 0.6; margin-bottom: 18px;
+        }
+        .testi-text {
+            font-size: 15px; color: rgba(0, 0, 0, 0.75); line-height: 1.7;
+            font-style: italic; margin-bottom: 24px;
+            font-family: var(--font-display); font-weight: 400;
+        }
+        .testi-author { display: flex; align-items: center; gap: 12px; }
+        .testi-avatar {
+            width: 42px; height: 42px; border-radius: 50%;
+            background: var(--mid); display: flex; align-items: center; justify-content: center;
+            font-family: var(--font-display); font-size: 18px; font-weight: 700; color: var(--gold);
+            flex-shrink: 0;
+        }
+        .testi-name { font-size: 14px; font-weight: 700; color: var(--white); }
+        .testi-company { font-size: 12px; font-weight: 500; color: rgba(0, 0, 0, 0.5); margin-top: 2px; }
+        .stars { display: flex; gap: 2px; margin-bottom: 14px; }
+        .star { color: var(--gold); font-size: 14px; }
+        
+        .form-section {
+            background: var(--black);
+            position: relative; overflow: hidden;
+        }
+        .form-section::after {
+            content: '';
+            position: absolute; bottom: -200px; right: -200px;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(217,0,15,0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .form-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 80px; align-items: center; position: relative; z-index: 2;
+        }
+        .form-promise-list { margin-top: 36px; display: flex; flex-direction: column; gap: 14px; }
+        .form-promise {
+            display: flex; align-items: flex-start; gap: 12px;
+            font-size: 15px; font-weight: 500; color: rgba(0, 0, 0, 0.7);
+        }
+        .form-promise-icon {
+            width: 22px; height: 22px; background: rgba(217,0,15,0.08);
+            border: 1px solid rgba(217,0,15,0.2);
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 2px; flex-shrink: 0; margin-top: 2px;
+        }
+        .form-promise-icon svg { width: 12px; height: 12px; stroke: var(--red); stroke-width: 2; fill: none; }
+        
+        .form-right {
+            background: var(--dark);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+            border-radius: 4px; padding: 42px 38px;
+            border-top: 3px solid var(--red);
+        }
+        .form-title { font-family: var(--font-display); font-size: 28px; font-weight: 700; color: var(--white); margin-bottom: 6px; }
+        .form-subtitle { font-size: 14px; font-weight: 500; color: rgba(0, 0, 0, 0.5); margin-bottom: 32px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+        .form-group { margin-bottom: 16px; }
+        .form-group.full { grid-column: 1/-1; }
+        label {
+            display: block; font-size: 12px; font-weight: 700;
+            letter-spacing: 0.1em; text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.6); margin-bottom: 8px;
+        }
+        input, select, textarea {
+            width: 100%;
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            color: var(--white);
+            padding: 13px 16px;
+            font-family: var(--font-body); font-size: 14px;
+            border-radius: 2px;
+            transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+            outline: none;
+            -webkit-appearance: none;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: var(--red);
+            background: rgba(217,0,15,0.02);
+            box-shadow: 0 0 0 3px rgba(217,0,15,0.1);
+        }
+        input::placeholder, textarea::placeholder { color: rgba(0, 0, 0, 0.35); }
+        select option { background: var(--dark); color: var(--white); }
+        textarea { resize: vertical; min-height: 100px; }
+        
+        .form-submit {
+            width: 100%;
+            background: var(--red); color: white;
+            padding: 18px 36px; border: none; cursor: pointer;
+            font-family: var(--font-body); font-size: 14px; font-weight: 700;
+            letter-spacing: 0.1em; text-transform: uppercase;
+            margin-top: 8px;
+            transition: background 0.2s, transform 0.1s;
+            position: relative; overflow: hidden;
+        }
+        .form-submit:hover { background: var(--red-dark); }
+        .form-submit:active { transform: scale(0.99); }
+        .form-note { font-size: 12px; font-weight: 500; color: rgba(0, 0, 0, 0.4); text-align: center; margin-top: 12px; }
+
+        footer {
+            background: var(--near-black);
+            border-top: 1px solid rgba(0,0,0,0.05);
+            padding: 48px 5% 32px;
+        }
+        .footer-inner {
+            display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
+            gap: 24px; margin-bottom: 28px;
+        }
+        .footer-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+        .footer-contact { display: flex; gap: 28px; flex-wrap: wrap; }
+        .footer-contact a {
+            font-size: 14px; font-weight: 500; color: rgba(0, 0, 0, 0.6);
+            text-decoration: none; display: flex; align-items: center; gap: 8px;
+            transition: color 0.2s;
+        }
+        .footer-contact a:hover { color: var(--red); }
+        .footer-contact svg { width: 15px; height: 15px; stroke: var(--red); stroke-width: 2; fill: none; }
+        .footer-divider { height: 1px; background: rgba(0, 0, 0, 0.08); margin-bottom: 24px; }
+        .footer-bottom {
+            display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
+            gap: 12px; font-size: 13px; font-weight: 500; color: rgba(0, 0, 0, 0.5);
+        }
+
+        /* ========== FLOATING CONTACT BUTTONS (ADDED) ========== */
+        .fixed-contact-buttons {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: flex-end;
+        }
+        .fixed-contact-buttons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            background: var(--red);
+            color: #fff;
+            box-shadow: 0 6px 18px rgba(217, 0, 15, 0.35);
+            transition: transform 0.2s, background 0.2s;
+            text-decoration: none;
+        }
+        .fixed-contact-buttons a:hover {
+            transform: scale(1.08);
+            background: var(--red-dark);
+        }
+        .fixed-contact-buttons svg {
+            width: 24px;
+            height: 24px;
+            fill: #fff;
+        }
+        @media (max-width: 600px) {
+            .fixed-contact-buttons {
+                bottom: 16px;
+                right: 16px;
+            }
+            .fixed-contact-buttons a {
+                width: 48px;
+                height: 48px;
+            }
+            .fixed-contact-buttons svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        /* ========== MODAL (ADDED) ========== */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(4px);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .modal-overlay.active {
+            display: flex;
+        }
+        .modal-content {
+            background: #fff;
+            border-radius: 6px;
+            max-width: 500px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 30px 28px 24px;
+            position: relative;
+            border-top: 4px solid var(--red);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            animation: fadeSlide 0.3s ease;
+        }
+        @keyframes fadeSlide {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .modal-close {
+            position: absolute;
+            top: 12px;
+            right: 16px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--red);
+            line-height: 1;
+            transition: color 0.2s;
+        }
+        .modal-close:hover { color: var(--red-dark); }
+        .modal-content .form-title { margin-bottom: 8px; }
+        .modal-content .form-subtitle { margin-bottom: 24px; font-size: 13px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="https://pleasantplastic.com" class="logo-wrap">
+        <img src="assets/logo.svg" alt="Pleasant Plastic Logo" class="logo-img" onerror="this.onerror=null; this.src='https://placehold.co/120x42/D9000F/ffffff?text=LOGO'">
+        <div class="logo-text">
+            <span class="logo-sub">Dubai - UAE</span>
+        </div>
+    </a>
+    <a href="#quote" class="nav-cta">Get Free Quote</a>
+</nav>
+
+<section class="hero" style="padding: 72px 0 0 0;">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-accent-line"></div>
+    <div class="hero-left">
+        <div class="hero-badge">Dubai's #1 Acrylic Specialist</div>
+        <h1 class="hero-h1">Custom Acrylic<br><em>Awards</em> &amp;</h1>
+        <div class="hero-h1-sub">Trophies UAE</div>
+        <p class="hero-desc">
+            Precision-crafted acrylic awards with laser engraving - made to your exact design. Corporate events, employee recognition, sports & exhibitions. Fast UAE delivery, bulk orders welcome.
+        </p>
+        <div class="hero-ctas">
+            <a href="#quote" class="btn-primary">Get Free Quote</a>
+            <a href="#products" class="btn-ghost">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 8 16 12 12 16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                View Products
+            </a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-num">500<span>+</span></div>
+                <div class="stat-label">Projects Delivered</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">24<span>hrs</span></div>
+                <div class="stat-label">Quote Turnaround</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">15<span>+</span></div>
+                <div class="stat-label">Years in UAE</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="hero-right">
+        <div class="mosaic-badge-floating">
+            <div class="badge-num">5.0</div>
+            <div class="badge-txt">Google<br>Rating</div>
+        </div>
+        <div class="hero-mosaic">
+            <!-- Card 1: tall - main trophy image -->
+            <div class="mosaic-card tall">
+                <img src="assets/premium-awards.png" alt="Premium Award" onerror="this.onerror=null; this.src='https://placehold.co/400x600/1a1a1a/c9a84c?text=Premium+Award'">
+                <div class="card-overlay"></div>
+                <div class="card-label">Premium Award</div>
+            </div>
+            
+            <!-- Card 2: corporate plaque image -->
+            <div class="mosaic-card">
+                <img src="assets/corporate-plaque.png" alt="Corporate Plaque" onerror="this.onerror=null; this.src='https://placehold.co/400x300/141414/c9a84c?text=Corporate+Plaque'">
+                <div class="card-overlay"></div>
+                <div class="card-label">Corporate Plaque</div>
+            </div>
+            
+            <!-- Card 3: crystal award image -->
+            <div class="mosaic-card">
+                <img src="assets/crystal-award.png" alt="Crystal Award" onerror="this.onerror=null; this.src='https://placehold.co/400x300/0f0f0f/c9a84c?text=Crystal+Award'">
+                <div class="card-overlay"></div>
+                <div class="card-label">Crystal Award</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="trust-bar">
+    <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        Laser Engraving Included
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+        UAE Quality Certified
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Quote Within 24 Hours
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+        Bulk Orders Welcome
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        UAE-Wide Delivery
+    </div>
+</div>
+
+<section class="products-section" id="products">
+    <div class="products-header reveal">
+        <div class="section-label">Our Products</div>
+        <h2 class="section-h2">Premium Acrylic Awards<br>Crafted in <em>Dubai</em></h2>
+    </div>
+    <div class="products-grid">
+        <div class="product-card reveal" style="transition-delay:0.1s">
+            <div class="product-card-img">
+                <img src="assets/classic-trophy.png" alt="Classic Trophy Award" onerror="this.onerror=null; this.src='https://placehold.co/400x500/1e1e1e/c9a84c?text=Classic+Trophy'">
+                <span class="product-card-tag">Best Seller</span>
+            </div>
+            <div class="product-card-body">
+                <div class="product-card-name">Classic Trophy Award</div>
+                <p class="product-card-desc">Timeless trophy form in premium crystal-clear acrylic. Laser-engraved personalisation, star-top finish. Perfect for corporate recognition and sports events.</p>
+                <a href="#quote" class="product-card-link">Request Quote &rarr;</a>
+            </div>
+        </div>
+        
+        <div class="product-card reveal" style="transition-delay:0.2s">
+            <div class="product-card-img">
+                <img src="assets/corporate-plaque-award.png" alt="Corporate Plaque" onerror="this.onerror=null; this.src='https://placehold.co/400x500/1e1e1e/c9a84c?text=Corporate+Plaque'">
+                <span class="product-card-tag">Popular</span>
+            </div>
+            <div class="product-card-body">
+                <div class="product-card-name">Corporate Plaque</div>
+                <p class="product-card-desc">Elegant wall-mount plaques with gold-border detail and UV-printed branding. Ideal for employee of the year, certifications and office décor.</p>
+                <a href="#quote" class="product-card-link">Request Quote &rarr;</a>
+            </div>
+        </div>
+        
+        <div class="product-card reveal" style="transition-delay:0.3s">
+            <div class="product-card-img">
+                <img src="assets/Crystal-Diamond.png" alt="Crystal Diamond Award" onerror="this.onerror=null; this.src='https://placehold.co/400x500/1e1e1e/c9a84c?text=Crystal+Diamond'">
+                <span class="product-card-tag">Premium</span>
+            </div>
+            <div class="product-card-body">
+                <div class="product-card-name">Crystal Diamond Award</div>
+                <p class="product-card-desc">Multi-faceted crystal-cut acrylic with red illuminated core. A standout centrepiece for gala events, VIP recognition and executive gifts.</p>
+                <a href="#quote" class="product-card-link">Request Quote &rarr;</a>
+            </div>
+        </div>
+        
+        <div class="product-card reveal" style="transition-delay:0.4s">
+            <div class="product-card-img">
+                <img src="assets/shield-trophy.png" alt="Shield Trophy Award" onerror="this.onerror=null; this.src='https://placehold.co/400x500/1e1e1e/c9a84c?text=Shield+Trophy'">
+                <span class="product-card-tag">New</span>
+            </div>
+            <div class="product-card-body">
+                <div class="product-card-name">Shield Trophy Award</div>
+                <p class="product-card-desc">Bold shield silhouette with engraved crest and gold-base finish. A powerful statement piece for corporate events, tournaments and annual galas.</p>
+                <a href="#quote" class="product-card-link">Request Quote &rarr;</a>
+            </div>
+        </div>
+        
+        <div class="product-card reveal" style="transition-delay:0.5s">
+            <div class="product-card-img">
+                <img src="assets/arch-certificate.png" alt="Arch Certificate Award" onerror="this.onerror=null; this.src='https://placehold.co/400x500/1e1e1e/c9a84c?text=Arch+Certificate'">
+                <span class="product-card-tag">Elegant</span>
+            </div>
+            <div class="product-card-body">
+                <div class="product-card-name">Arch Certificate Award</div>
+                <p class="product-card-desc">Graceful arch form with certificate-style engraving panel. Available in clear, frosted and coloured acrylic. Ideal for professional recognition ceremonies.</p>
+                <a href="#quote" class="product-card-link">Request Quote &rarr;</a>
+            </div>
+        </div>
+        
+        <div class="product-card reveal" style="transition-delay:0.6s">
+            <div class="product-card-img">
+                <img src="assets/obelisk-prestige.png" alt="Obelisk Prestige Award" onerror="this.onerror=null; this.src='https://placehold.co/400x500/1e1e1e/c9a84c?text=Obelisk+Prestige'">
+                <span class="product-card-tag">Executive</span>
+            </div>
+            <div class="product-card-body">
+                <div class="product-card-name">Obelisk Prestige Award</div>
+                <p class="product-card-desc">Tall obelisk form with red accent panel and deep-engraved text. The executive choice - perfect for leadership awards, lifetime achievement and VIP recognition.</p>
+                <a href="#quote" class="product-card-link">Request Quote &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="usp-section">
+    <div class="usp-grid">
+        <div class="usp-list reveal">
+            <div class="section-label" style="margin-bottom:20px">Why Choose Us</div>
+            <h2 class="section-h2" style="margin-bottom:40px">Why UAE Businesses<br>Choose <em>Pleasant Plastic</em></h2>
+            
+            <div class="usp-item">
+                <div class="usp-number">01</div>
+                <div class="usp-content">
+                    <div class="usp-title">Precision Laser Engraving - Included</div>
+                    <p class="usp-desc">Every award includes high-resolution laser engraving at no extra charge. Logos, text, serial numbers - all cut with sub-millimetre precision.</p>
+                </div>
+            </div>
+            <div class="usp-item">
+                <div class="usp-number">02</div>
+                <div class="usp-content">
+                    <div class="usp-title">Fully Custom - Any Shape, Any Size</div>
+                    <p class="usp-desc">No templates. We fabricate to your exact brief. Custom shapes, colours, sizes and finishes - from single pieces to bulk orders of 500+.</p>
+                </div>
+            </div>
+            <div class="usp-item">
+                <div class="usp-number">03</div>
+                <div class="usp-content">
+                    <div class="usp-title">Fast Turnaround & UAE Delivery</div>
+                    <p class="usp-desc">Manufactured in our Dubai facility for quick lead times. UAE-wide delivery. Rush orders available for last-minute events.</p>
+                </div>
+            </div>
+            <div class="usp-item">
+                <div class="usp-number">04</div>
+                <div class="usp-content">
+                    <div class="usp-title">Trusted by 500+ UAE Companies</div>
+                    <p class="usp-desc">From startups to government entities - over a decade supplying premium awards to businesses across the UAE, Saudi Arabia and GCC.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="usp-visual reveal" style="transition-delay:0.2s">
+            <div class="usp-visual-main">
+                <img src="assets/laser-engraving.webp" alt="Laser Engraving Technology" onerror="this.onerror=null; this.src='https://placehold.co/600x450/1a1a1a/c9a84c?text=Laser+Engraving+Tech'">
+                <div style="position:absolute;bottom:14px;left:14px;font-size:11px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:white;background:rgba(0,0,0,0.6);padding:4px 8px;border-radius:2px;">Laser Engraving Tech</div>
+            </div>
+            <div class="usp-visual-secondary">
+                <div class="usp-mini-card">
+                    <div class="usp-mini-num">500<span style="font-size:20px;color:var(--red)">+</span></div>
+                    <div class="usp-mini-label">Orders Delivered</div>
+                </div>
+                <div class="usp-mini-card">
+                    <div class="usp-mini-num">24<span style="font-size:16px;color:var(--red)">hr</span></div>
+                    <div class="usp-mini-label">Quote Turnaround</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="how-section">
+    <div class="reveal">
+        <div class="section-label">Process</div>
+        <h2 class="section-h2">From Brief to<br><em>Delivered Award</em> in 4 Steps</h2>
+    </div>
+    <div class="steps-grid">
+        <div class="step reveal" style="transition-delay:0.1s">
+            <div class="step-circle">
+                <svg viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+            </div>
+            <div class="step-title">1. Share Your Brief</div>
+            <p class="step-desc">Tell us your award type, quantity, sizes, text and logo. Use our quote form or WhatsApp us directly.</p>
+        </div>
+        <div class="step reveal" style="transition-delay:0.2s">
+            <div class="step-circle">
+                <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+            </div>
+            <div class="step-title">2. Receive Quote in 24hrs</div>
+            <p class="step-desc">We send a detailed quote with pricing, timeline and a digital design proof for your approval.</p>
+        </div>
+        <div class="step reveal" style="transition-delay:0.3s">
+            <div class="step-circle">
+                <svg viewBox="0 0 24 24"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+            </div>
+            <div class="step-title">3. We Fabricate</div>
+            <p class="step-desc">Precision CNC cutting, laser engraving and assembly in our Dubai factory - quality-checked before dispatch.</p>
+        </div>
+        <div class="step reveal" style="transition-delay:0.4s">
+            <div class="step-circle">
+                <svg viewBox="0 0 24 24"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+            </div>
+            <div class="step-title">4. Delivered UAE-Wide</div>
+            <p class="step-desc">Carefully packaged and delivered to your door across the UAE. Collection from our Dubai workshop also available.</p>
+        </div>
+    </div>
+</section>
+
+<section class="industries-section">
+    <div class="reveal">
+        <div class="section-label">Industries Served</div>
+        <h2 class="section-h2">Trusted Across<br><em>Every Sector</em></h2>
+    </div>
+    <div class="industries-grid">
+        <div class="industry-pill reveal">
+            <svg viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            Corporate & Finance
+        </div>
+        <div class="industry-pill reveal" style="transition-delay:0.05s">
+            <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+            Government & Awards Bodies
+        </div>
+        <div class="industry-pill reveal" style="transition-delay:0.1s">
+            <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            Sports & Athletics
+        </div>
+        <div class="industry-pill reveal" style="transition-delay:0.15s">
+            <svg viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+            Education & Universities
+        </div>
+        <div class="industry-pill reveal" style="transition-delay:0.2s">
+            <svg viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            Events & Hospitality
+        </div>
+        <div class="industry-pill reveal" style="transition-delay:0.25s">
+            <svg viewBox="0 0 24 24"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            Technology & Media
+        </div>
+        <div class="industry-pill reveal" style="transition-delay:0.3s">
+            <svg viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            HR & Employee Recognition
+        </div>
+        <div class="industry-pill reveal" style="transition-delay:0.35s">
+            <svg viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+            Retail & Exhibitions
+        </div>
+        <div class="industry-pill reveal" style="transition-delay:0.4s">
+            <svg viewBox="0 0 24 24"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Diplomatic & International
+        </div>
+    </div>
+</section>
+
+<section class="testimonials-section">
+    <div class="reveal">
+        <div class="section-label">Reviews</div>
+        <h2 class="section-h2">What Our Clients<br><em>Say</em></h2>
+    </div>
+    <div class="testi-grid">
+        <div class="testi-card reveal" style="transition-delay:0.1s">
+            <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+            <div class="testi-quote">"</div>
+            <p class="testi-text">Ordered 80 acrylic awards for our annual gala and the quality was outstanding. Engraving was pin-sharp and delivery was on time. Our guests were genuinely impressed.</p>
+            <div class="testi-author">
+                <div class="testi-avatar">AK</div>
+                <div>
+                    <div class="testi-name">Ahmed K.</div>
+                    <div class="testi-company">HR Director, Emirates Group</div>
+                </div>
+            </div>
+        </div>
+        <div class="testi-card reveal" style="transition-delay:0.2s">
+            <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+            <div class="testi-quote">"</div>
+            <p class="testi-text">Pleasant Plastic delivered 200 custom trophies with our logo for our sports tournament. Professional, fast and the pricing was very competitive. Will order again.</p>
+            <div class="testi-author">
+                <div class="testi-avatar">SM</div>
+                <div>
+                    <div class="testi-name">Sarah M.</div>
+                    <div class="testi-company">Events Manager, Dubai Sports Council</div>
+                </div>
+            </div>
+        </div>
+        <div class="testi-card reveal" style="transition-delay:0.3s">
+            <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+            <div class="testi-quote">"</div>
+            <p class="testi-text">We needed rush awards for a government ceremony - they turned it around in 3 days. Crystal clear acrylic, perfect engraving. Highly recommend for last-minute orders.</p>
+            <div class="testi-author">
+                <div class="testi-avatar">RJ</div>
+                <div>
+                    <div class="testi-name">Ravi J.</div>
+                    <div class="testi-company">Operations Lead, Abu Dhabi Government</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="form-section" id="quote">
+    <div class="form-grid">
+        <div class="form-left reveal">
+            <div class="section-label">Get a Quote</div>
+            <h2 class="section-h2">Tell Us About<br>Your <em>Award Project</em></h2>
+            <div class="form-promise-list">
+                <div class="form-promise">
+                    <div class="form-promise-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    Free quote - no obligation, no sales pressure
+                </div>
+                <div class="form-promise">
+                    <div class="form-promise-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    Digital design proof included with every quote
+                </div>
+                <div class="form-promise">
+                    <div class="form-promise-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    Response within 24 hours on business days
+                </div>
+                <div class="form-promise">
+                    <div class="form-promise-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    Single pieces and bulk orders - all welcome
+                </div>
+                <div class="form-promise">
+                    <div class="form-promise-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    UAE-wide delivery - Dubai, Abu Dhabi, Sharjah & more
+                </div>
+            </div>
+        </div>
+        <div class="form-right reveal" style="transition-delay:0.2s">
+            <div class="form-title">Request Free Quote</div>
+            <div class="form-subtitle">We'll reply within 24 hours with pricing & a design proof</div>
+            <!-- FORM NOW SUBMITS TO submit.php (ADDED action & method) -->
+            <form id="main-quote-form" action="submit.php" method="POST" onsubmit="return handleFormSubmit(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Ahmed">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Al Rashid">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="ahmed@company.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone / WhatsApp</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+971 50 000 0000">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="atype">Award Type</label>
+                        <select id="atype" name="atype">
+                            <option value="">Select type</option>
+                            <option>Classic Trophy</option>
+                            <option>Corporate Plaque</option>
+                            <option>Crystal Award</option>
+                            <option>Shield Trophy</option>
+                            <option>Arch Award</option>
+                            <option>Custom Design</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="qty">Quantity</label>
+                        <select id="qty" name="qty">
+                            <option>1-10 pieces</option>
+                            <option>11-50 pieces</option>
+                            <option>51-200 pieces</option>
+                            <option>200+ pieces</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="msg">Project Details</label>
+                    <textarea id="msg" name="msg" placeholder="Tell us about your event, any custom requirements, deadline, engraving text or logo details..."></textarea>
+                </div>
+                <button type="submit" class="form-submit">Send My Free Quote Request &rarr;</button>
+                <p class="form-note">🔒 Your details are safe with us - no spam, ever.</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-inner">
+        <a href="https://pleasantplastic.com" class="footer-logo">
+            <img src="assets/logo.png" alt="Pleasant Plastic Logo" class="logo-img" style="height: 36px;" onerror="this.onerror=null; this.src='https://placehold.co/100x36/D9000F/ffffff?text=LOGO'">
+            <div class="logo-text">
+                <span class="logo-name" style="font-size:16px">Pleasant Plastic</span>
+                <span class="logo-sub">Dubai, UAE</span>
+            </div>
+        </a>
+        <div class="footer-contact">
+            <a href="mailto:info@pleasantplastic.com">
+                <svg viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                info@pleasantplastic.com
+            </a>
+            <a href="https://pleasantplastic.com" target="_blank">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                pleasantplastic.com
+            </a>
+            <a href="#">
+                <svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Dubai, UAE
+            </a>
+        </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+        <span>&copy; 2025 Pleasant Plastic LLC. All rights reserved.</span>
+        <span>Custom Acrylic Awards & Trophies - Dubai, UAE</span>
+    </div>
+</footer>
+
+<!-- ========== FLOATING WHATSAPP + CALL BUTTONS (ADDED) ========== -->
+<div class="fixed-contact-buttons">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/971559264034" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <!-- Call -->
+    <a href="tel:+971559264034" aria-label="Call now">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+    </a>
+</div>
+
+<!-- ========== MODAL POPUP FOR QUOTE (ADDED) ========== -->
+<div class="modal-overlay" id="quote-modal-overlay">
+    <div class="modal-content">
+        <button class="modal-close" id="modal-close">&times;</button>
+        <div class="form-title">Request Free Quote</div>
+        <div class="form-subtitle">We'll reply within 24 hours with pricing & a design proof</div>
+        <form id="modal-quote-form" action="submit.php" method="POST" onsubmit="return handleFormSubmit(event)">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="modal-fname">First Name</label>
+                    <input type="text" id="modal-fname" name="fname" placeholder="Ahmed">
+                </div>
+                <div class="form-group">
+                    <label for="modal-lname">Last Name</label>
+                    <input type="text" id="modal-lname" name="lname" placeholder="Al Rashid">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="modal-email">Email Address</label>
+                <input type="email" id="modal-email" name="email" placeholder="ahmed@company.com">
+            </div>
+            <div class="form-group">
+                <label for="modal-phone">Phone / WhatsApp</label>
+                <input type="tel" id="modal-phone" name="phone" placeholder="+971 50 000 0000">
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="modal-atype">Award Type</label>
+                    <select id="modal-atype" name="atype">
+                        <option value="">Select type</option>
+                        <option>Classic Trophy</option>
+                        <option>Corporate Plaque</option>
+                        <option>Crystal Award</option>
+                        <option>Shield Trophy</option>
+                        <option>Arch Award</option>
+                        <option>Custom Design</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="modal-qty">Quantity</label>
+                    <select id="modal-qty" name="qty">
+                        <option>1-10 pieces</option>
+                        <option>11-50 pieces</option>
+                        <option>51-200 pieces</option>
+                        <option>200+ pieces</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="modal-msg">Project Details</label>
+                <textarea id="modal-msg" name="msg" placeholder="Tell us about your event, any custom requirements, deadline, engraving text or logo details..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send My Free Quote Request &rarr;</button>
+            <p class="form-note">🔒 Your details are safe with us - no spam, ever.</p>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Scroll reveal animation observer
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) { e.target.classList.add('visible'); }
+        });
+    }, { threshold: 0.12 });
+    
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    
+    // ------ FORM SUBMISSION (NOW ACTUALLY SENDS TO submit.php) ------
+    function handleFormSubmit(event) {
+        event.preventDefault();
+        const form = event.target;
+        const fname = form.querySelector('[name="fname"]').value.trim();
+        const email = form.querySelector('[name="email"]').value.trim();
+        const submitBtn = form.querySelector('.form-submit');
+        const originalText = submitBtn.textContent;
+        
+        if (!fname || !email) {
+            submitBtn.textContent = 'Please fill out Name and Email';
+            submitBtn.style.background = '#a80009';
+            submitBtn.style.cursor = 'default';
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.style.background = '';
+                submitBtn.style.cursor = '';
+            }, 3000);
+            return false;
+        }
+        
+        // Show sending state
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = '0.7';
+        
+        // Send form data to submit.php
+        fetch(form.action, {
+            method: form.method,
+            body: new FormData(form),
+        })
+        .then(response => response.text())
+        .then(data => {
+            // Success
+            submitBtn.textContent = '✓ Quote Request Sent - We\'ll be in touch within 24 hours!';
+            submitBtn.style.background = '#1a7a3a';
+            submitBtn.style.opacity = '1';
+            submitBtn.disabled = false;
+            
+            // If this is the modal form, close modal after a short delay
+            if (form.id === 'modal-quote-form') {
+                setTimeout(() => {
+                    document.getElementById('quote-modal-overlay').classList.remove('active');
+                    // Reset button after closing
+                    submitBtn.textContent = originalText;
+                    submitBtn.style.background = '';
+                    submitBtn.style.opacity = '';
+                }, 2500);
+            } else {
+                // Main form reset after delay
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.style.background = '';
+                    submitBtn.style.opacity = '';
+                    form.reset();
+                }, 4000);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            submitBtn.textContent = 'Error - please try again or WhatsApp us';
+            submitBtn.style.background = '#a80009';
+            submitBtn.style.opacity = '1';
+            submitBtn.disabled = false;
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.style.background = '';
+            }, 3000);
+        });
+        
+        return false;
+    }
+    
+    // ------ MODAL POPUP LOGIC (ADDED) ------
+    const modalOverlay = document.getElementById('quote-modal-overlay');
+    const modalClose = document.getElementById('modal-close');
+    
+    // Open modal when any CTA with href="#quote" is clicked
+    document.addEventListener('click', function(e) {
+        const target = e.target.closest('a[href="#quote"]');
+        if (target) {
+            e.preventDefault();
+            modalOverlay.classList.add('active');
+        }
+    });
+    
+    // Close modal on close button click
+    modalClose.addEventListener('click', function() {
+        modalOverlay.classList.remove('active');
+    });
+    
+    // Close modal when clicking outside the content
+    modalOverlay.addEventListener('click', function(e) {
+        if (e.target === modalOverlay) {
+            modalOverlay.classList.remove('active');
+        }
+    });
+    
+    // Close modal on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+            modalOverlay.classList.remove('active');
+        }
+    });
+    
+    // Retain smooth scrolling for #products links (unchanged)
+    document.querySelectorAll('a[href="#products"]').forEach(a => {
+        a.addEventListener('click', e => {
+            e.preventDefault();
+            document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+    
+    // Parallax on hero background pattern
+    document.addEventListener('scroll', () => {
+        const y = window.scrollY;
+        const pat = document.querySelector('.hero-bg-pattern');
+        if (pat) pat.style.transform = `translateY(${y * 0.15}px)`;
+    });
+</script>
+</body>
+</html>
