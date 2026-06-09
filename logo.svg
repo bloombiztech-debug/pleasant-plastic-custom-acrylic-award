@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" data-name="Layer 1" width="259" height="64" viewBox="0 0 135.59 64">
+  <defs>
+    <style>.cls-1{font-size:19.38px;fill:#fff;font-family:Slider;}.cls-2{font-size:25px;}.cls-3{fill:url(#New_Gradient_Swatch_copy_2);}.cls-4{fill:url(#New_Gradient_Swatch_2);}</style>
+    <linearGradient id="New_Gradient_Swatch_copy_2" x1="8.71" y1="33.4" x2="48.92" y2="33.4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5d53a3"></stop>
+      <stop offset="1" stop-color="#c2549f"></stop>
+    </linearGradient>
+    <linearGradient id="New_Gradient_Swatch_2" y1="32" x2="40.88" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ee3b74"></stop>
+      <stop offset="0.25" stop-color="#ef436d"></stop>
+      <stop offset="0.63" stop-color="#f1585b"></stop>
+      <stop offset="1" stop-color="#f37344"></stop>
+    </linearGradient>
+  </defs>
+  <text class="cls-1" transform="translate(53.48 32)">Pleasant <tspan class="cls-2"><tspan x="0" y="20.31">Plastic</tspan></tspan></text>
+  <path class="cls-3" d="M28.82,2.8A20.11,20.11,0,0,0,8.72,22.43h0V64a7.06,7.06,0,0,0,7.06-7.06V38.2A20.1,20.1,0,1,0,28.82,2.8Zm0,33.16a13.05,13.05,0,1,1,13-13A13,13,0,0,1,28.82,36Z"></path>
+  <path class="cls-4" d="M40.88,20.44A20.44,20.44,0,0,0,0,20.44c0,.16,0,.31,0,.47H0V56.82A7.17,7.17,0,0,0,7.18,64h0V22.36a13.06,13.06,0,0,1,.58-4A13.32,13.32,0,1,1,25.88,34.6a13.3,13.3,0,0,0,15-13.22c0-.16,0-.31,0-.47S40.88,20.6,40.88,20.44Z"></path>
+</svg>
